@@ -7,7 +7,7 @@ export default [
   {
     url: "https://youtu.be/qrO4YZeyl0I",
     name: "Lady Gaga - Bad Romance",
-    emoji: "👩‍❤️‍👩 ❌",
+    emoji: "💞❌",
   },
   {
     url: "https://youtu.be/bESGLojNYSo",
