@@ -15,7 +15,7 @@ export default new Vuex.Store({
   },
   mutations: {
     previous(state) {
-      const index = songs.findIndex(state.currentSong);
+      const index = songs.indexOf(state.currentSong);
 
       if (songs[index - 1]) {
         state.currentSong = songs[index - 1];
@@ -27,7 +27,7 @@ export default new Vuex.Store({
       state.currentSong = songs[Math.floor(Math.random() * songs.length)];
     },
     next(state) {
-      const index = songs.findIndex(state.currentSong);
+      const index = songs.indexOf(state.currentSong);
 
       if (songs[index + 1]) {
         state.currentSong = songs[index + 1];
