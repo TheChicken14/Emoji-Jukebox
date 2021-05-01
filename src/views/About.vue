@@ -12,6 +12,13 @@
       Made by
       <a href="https://twitter.com/skeppy_chicken" target="_blank">Wisse</a>
     </p>
+
+    <p>
+      View the source code on
+      <a href="https://github.com/TheChicken14/Emoji-Jukebox" target="_blank"
+        >GitHub</a
+      >
+    </p>
   </div>
 </template>
 
