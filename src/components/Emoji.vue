@@ -1,6 +1,8 @@
 <template>
   <h1 class="emoji" :title="name">
-    <a :href="url" class="url" target="_blank">{{ emoji }}</a>
+    <Transition name="fade" mode="out-in">
+      <a :href="url" class="url" target="_blank" :key="url">{{ emoji }}</a>
+    </Transition>
   </h1>
 </template>
 
@@ -26,5 +28,13 @@ export default {
 }
 .emoji {
   font-size: 6.5rem;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
