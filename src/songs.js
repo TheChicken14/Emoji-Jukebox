@@ -15,6 +15,11 @@ export default [
     emoji: "♣️😩",
   },
   {
+    url: "https://youtu.be/2Abk1jAONjw",
+    name: "Lady Gaga ft. Colby O'Donis - Just Dance",
+    emoji: "🙄💃🕺",
+  },
+  {
     url: "https://youtu.be/PNu_-deVemE?t=203",
     name: "Lady Gaga - G.U.Y.",
     emoji: "👧⬇️☝️",
@@ -98,5 +103,10 @@ export default [
     url: "https://youtu.be/R3D-r4ogr7s",
     name: "Duncan Laurence - Arcade (live)",
     emoji: "🕹🏆🇳🇱",
+  },
+  {
+    url: "https://youtu.be/0ir1qkPXPVM",
+    name: "Miley Cyrus ft. Dua Lipa - Prisoner",
+    emoji: "⛓👮",
   },
 ];
