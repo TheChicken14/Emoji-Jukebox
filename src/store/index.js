@@ -12,6 +12,7 @@ export default new Vuex.Store({
       name: "",
       emoji: "",
     },
+    playerVisible: false,
   },
   mutations: {
     previous(state) {
@@ -22,6 +23,9 @@ export default new Vuex.Store({
       } else {
         state.currentSong = songs[songs.length - 1];
       }
+    },
+    playpause(state) {
+      state.playerVisible = !state.playerVisible;
     },
     shuffle(state) {
       state.currentSong = songs[Math.floor(Math.random() * songs.length)];
@@ -35,6 +39,17 @@ export default new Vuex.Store({
         state.currentSong = songs[0];
       }
     },
+  },
+  getters: {
+    embedURL: (state) => {
+      const vID = state.currentSong.url
+        .split("/")
+        .pop()
+        .split("?")[0];
+
+      return `https://www.youtube.com/embed/${vID}`;
+    },
+    // https://www.youtube.com/embed/do9My8KY4bE
   },
   actions: {},
   modules: {},
