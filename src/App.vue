@@ -55,10 +55,13 @@ export default {
 
 html {
   height: 100%;
+  width: 100%;
+  margin: 0;
   background-color: #fa8bff;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .bg1 {
